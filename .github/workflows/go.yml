@@ -2,7 +2,7 @@ name: Go
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, ci-check ]
   pull_request:
     branches: [ main ]
 
@@ -53,3 +53,7 @@ jobs:
         uses: golangci/golangci-lint-action@v4
         with:
           version: latest
+          only-new-issues: true
+          args: --timeout 5m
+          skip-cache: true
+

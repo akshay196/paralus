@@ -3,10 +3,10 @@ linters:
   disable-all: true
   # uncomment as we fix the linting issues
   enable:
-    # - errcheck
-    # - gosimple
-    # - govet
-    # - staticcheck
-    # - unused
-    # - ineffassign
-    - misspell
+    - errcheck
+    - gosimple
+    - govet
+    - staticcheck
+    - unused
+    - ineffassign
+    # - misspell
